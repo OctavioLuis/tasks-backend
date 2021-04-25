@@ -63,13 +63,5 @@ public class TaskControllerTest {
 		}
 	}
 
-	@Test
-	public void DevSalvarTareaComSuccess() throws ValidationException {
-		Task todo = new Task();
-		todo.setTask("Descipcion");
-		todo.setDueDate(LocalDate.now());
-		 controller = new TaskController();
-		controller.save(todo);
-		Mockito.verify(taskRepo).save(todo);
-	}
+	
 }
